@@ -10,12 +10,14 @@ Extracting highlights manually from a full match video requires a lot of human e
 
 Here is the step-by-step process:
 
-Input the full match video<br/>
-Extract the audio <br/>
-Break the audio into chunks<br/>
-Compute short-time energy of every chunk<br/>
-Classify every chunk as excitement or not (based on a threshold value)<br/>
+Input the full match video from the user<br/>
+Extract the audio using librosa library from Python <br/>
+Break the audio into small chunks<br/>
+Listen to those chunks <br/>
+Compute audio signal of every chunk<br/>
+Classify every chunk as excitement or not (based on a minimum threshold value)<br/>
 Merge all the excitement-clips to form the video highlights<br/>
+
 
 
 
